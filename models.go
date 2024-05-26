@@ -17,4 +17,4 @@ type StudentDatabase struct {
 	mu       sync.Mutex         // mutex to handle concurrent read and write operations
 }
 
-var db StudentDatabase
+var db StudentDatabase = StudentDatabase{Students: map[string]Student{}}
